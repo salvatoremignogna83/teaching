@@ -1,0 +1,20 @@
+Comandi GIT
+Git clone <link> —> Clona un progetto
+Git init —> inizializza un repository vuoto nella cartella
+Git status —> visualizza lo stato del repository git
+Git add <nomefile> —> consente di tracciare una modifica su GIT, sostituendo a nomefile il carattere . Si tracciano tutti i file della cartella
+Git reset —> annulla le ultime add
+Git reset HEAD˜1 —> Annulla l’ultima commit
+Git reset <hash commit> —> annulla tutte le commit fino a quella relativa all’hash indicato
+Git commit -m “ Titolo commit “ -m “ descrizione” —> Comando di salvataggio del pacchetto
+Git checkout -b <nomebranch> —> Creo un nuovo branch denominato nomebranch e mi sposto sul nuovo branch
+Git checkout <nomebranck> —> Mi sposto sul branch nomebranch
+Git log —> elenca tutti i commit effettuati
+git remote add origin <indirizzo-web-repository> —> collega la cartella all’origine remota (Git Hub ad esempio)
+git remote remove origin —> rimuove l’origine
+git remote -v —> Fornisce informazioni sull’origine
+Git push origin dev —>  push una risorsa sul repository online
+Git merge <nomebranch> —> posizionato sul branch nel quale vogliamo riportare le modifiche eseguo il comando indicando in nomebranch il nome del branch dal quale prendere le modifiche da fondere nel branch nel quale sono posizionato.
+
+Comandi Visual Studio Code
+maiusc + ! —> in visualstudio crea la struttura di una pagina HTML
