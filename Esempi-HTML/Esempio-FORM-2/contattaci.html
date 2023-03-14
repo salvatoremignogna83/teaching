@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/css/main.css" />
+</head>
+<body>
+    
+    <!-- MAIN MENU' -->
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="chisiamo.html">Chi siamo</a>
+        <a href="contattaci.html">Contattaci</a>
+    </div>
+    <!-- FINE MAIN MENU' -->
+    
+    <!-- CONTENUTI DELLA PAGINA -->
+    <div style="padding-left:16px">
+        <h2>Sei nella pagina contatti</h2> 
+        <p>Puoi trovare tutte le informazioni utili per la creazione della form al sito <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">w3schools</a></p>
+        
+        <!-- INIZIO WEB FORM -->
+        <form action="contattaci.php" method="post" name="datiAnagrafici">
+            <section>
+                <h2>Modulo di contatto</h2>
+                <legend>Forniscici alcune informazioni:</legend>
+                <fieldset>
+                    <label for="nome">Nome e cognome</label><input name="nome" type="text" required autofocus="autofocus">
+                </fieldset>
+                <fieldset>
+                    <label for="commenti">Messaggio</label>
+                    <textarea name="messaggio" id="" placeholder="Introduci il tuo messaggio" rows="5" cols="20" maxlength="100" wrap="soft"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="password">Password</label><input name="password" type="password" min="0" max="10">
+                </fieldset>
+
+                <legend>Tipo di veicolo:</legend>
+                <fieldset>
+                    <input type="radio" id="veicoli-motore" name="tipo-veicolo" value="veicoli a motore">
+                    <label for="veicoli-motore">Veicoli a motore</label><br>
+                    <input type="radio" id="imbarcazioni" name="tipo-veicolo" value="imbarcazioni">
+                    <label for="imbarcazioni">Veicoli a motore</label><br>
+                    <input type="radio" id="aereo" name="tipo-veicolo" value="aereo">
+                    <label for="altro">Aereo</label><br>
+                </fieldset>
+
+                <legend>Patente:</legend>
+                <fieldset>
+                    <input type="checkbox" id="tipoa" name="tipoa" value="Tipo A">
+                    <label for="tipoa"> Tipo A</label><br>
+                    <input type="checkbox" id="tipob" name="tipob" value="Tipo B">
+                    <label for="tipob"> Tipo B</label><br>
+                    <input type="checkbox" id="tipoc" name="tipoc" value="Tipo C">
+                    <label for="tipoc"> Tipo C</label><br>
+                    <input type="checkbox" id="tipod" name="tipod" value="Tipo D">
+                    <label for="tipod"> Tipo D</label>
+                </fieldset>
+
+                <legend>Regione:</legend>
+                <fieldset>
+                    <select id="regioni" name="regioni">
+                        <option value="lombardia">Lombardia</option>
+                        <option value="emilia-romagna">Emilia Romagna</option>
+                        <option value="piemonte">Piemonte</option>
+                        <option value="veneto">Veneto</option>
+                        <option value="trentino-alto-adige">Trentino Alto Adige</option>
+                        <option value="valle-d-osta">Valle D'Aosta</option>
+                      </select>
+                </fieldset>
+
+                <legend>Città:</legend>
+                <fieldset>
+                    <select id="citta" name="citta" size="4" multiple>
+                        <option value="milano">Milano</option>
+                        <option value="aosta">Aosta</option>
+                        <option value="tornio">Torino</option>
+                        <option value="bologna">Bologna</option>
+                    </select><br><br>
+                </fieldset>
+
+                <legend>Inviaci un file</legend>
+                <fieldset>
+                    <label for="myfile">Seleziona un file:</label>
+                    <input type="file" id="myfile" name="myfile">
+                </fieldset>
+                   
+                
+                <input type="submit" value="Invia la form">
+            </section>
+            </form>
+            <!-- FINE WEB FORM -->
+
+    </div>
+    <!-- FINE CONTENUTI DELLA PAGINA-->
+
+</body>
+</html>
