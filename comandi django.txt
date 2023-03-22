@@ -1,3 +1,19 @@
 django-admin startproject mysite --> crea un nuovo progetto costituito da una o più app
-python manage.py runserver --> eseguito nella cartella di progetto avvia il server integrato di Python Django
+
+python3 manage.py runserver --> eseguito nella cartella di progetto avvia il server integrato di Python Django
+
 python3 manage.py startapp polls --> crea una nuova app nella cartella di progetto
+
+python3 manage.py migrate --> crea tabelle nel database
+
+python3 manage.py makemigrations polls --> Eseguendo makemigrations, stai dicendo a Django che hai apportato alcune modifiche ai tuoi modelli (in questo caso, ne hai aggiunto uno nuovo) e che desideri che le modifiche vengano memorizzate come migrazione.
+Le migrazioni sono il modo in cui Django memorizza i cambiamenti ai tuoi modelli (e quindi allo schema del tuo database) - sono files sul disco. Puoi leggerle le migrazioni per i tuoi nuovi modelli se vuoi, all’interno del file polls/migrations/0001_initial.py.
+
+python3 manage.py sqlmigrate polls 0001 --> mostra il codice SQL che verrà eseguito all'atto della migrazione. Non modifica il database.
+
+python3 manage.py check --> Verifica la correttezza del codice SQL senza modifcare il database.
+
+python3 manage.py shell --> accedi alla shall interattiva di python django
+
+python3 manage.py createsuperuser --> crea un utente per l'accesso al pannello di amministrazione
+
