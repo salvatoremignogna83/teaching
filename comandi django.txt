@@ -17,3 +17,7 @@ python3 manage.py shell --> accedi alla shall interattiva di python django
 
 python3 manage.py createsuperuser --> crea un utente per l'accesso al pannello di amministrazione
 
+get_object_or_404() --> La funzione get_object_or_404() prende un modello Django come primo argomento e un numero arbitrario di argomenti keyword, che passa alla funzione get() del manager del modello. Solleva Http404 se l’oggetto non esiste.
+
+get_list_or_404() --> funziona esattamente come get_object_or_404() – ad eccezione di usare filter() invece di get(). Solleva Http404 se la lista è vuota.
+
