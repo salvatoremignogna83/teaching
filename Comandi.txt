@@ -15,6 +15,7 @@ git remote remove origin —> rimuove l’origine
 git remote -v —> Fornisce informazioni sull’origine
 Git push origin dev —>  push una risorsa sul repository online
 Git merge <nomebranch> —> posizionato sul branch nel quale vogliamo riportare le modifiche eseguo il comando indicando in nomebranch il nome del branch dal quale prendere le modifiche da fondere nel branch nel quale sono posizionato.
+Git pull origin <nomebrach> --> recupera i files dal branch remoto e li mergia con quelli locali.
 
 Comandi Visual Studio Code
 maiusc + ! —> in visualstudio crea la struttura di una pagina HTML
