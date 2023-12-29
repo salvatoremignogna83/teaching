@@ -21,3 +21,5 @@ get_object_or_404() --> La funzione get_object_or_404() prende un modello Django
 
 get_list_or_404() --> funziona esattamente come get_object_or_404() – ad eccezione di usare filter() invece di get(). Solleva Http404 se la lista è vuota.
 
+python3 manage.py test polls --> esegue la classe di test dell'applicazione Polls
+
