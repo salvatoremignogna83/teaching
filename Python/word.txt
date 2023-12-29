@@ -1,0 +1,1 @@
+Ciao questo è il mio file con le parole da conteggiare, funzionerà?
